@@ -1,10 +1,14 @@
+/**
+ *Submitted for verification at BscScan.com on 2021-05-23
+*/
+
 //   $$ WELCOME TO AURO $$ <<
 
 // TELEGRAM: "t.me/aurofinance"
 
 // [TOKENOMICS]:
 // > AURO is a charity token on the Binance Smart Blockchain.
-// > The Max Supply of AURO is limited to 1 Billion Tokens.
+// > The Max Supply of AURO is limited to 1 Trillion Tokens.
 // > 3% fee auto moved to charity wallet with each and every transaction.
 // > 3% fee auto distribute to all holders with each and every transaction.
 // > 4% fee auto add to the liquidity pool with each and every transaction
@@ -791,7 +795,7 @@ contract AURO is Context, IERC20, Ownable {
     address private _charityWalletAddress = 0xb400bB7c87Cdb896713cd04eAcE38cA1647a312a;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 1000 * 10**6 * 10**9;
+    uint256 private _tTotal = 1000000 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -814,8 +818,8 @@ contract AURO is Context, IERC20, Ownable {
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
     
-    uint256 public _maxTxAmount = 1 * 10**6 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 1 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 5000 * 10**6 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 500 * 10**6 * 10**9;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
